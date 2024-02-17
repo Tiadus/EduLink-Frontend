@@ -1,0 +1,22 @@
+.logoHolder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.appName {
+    border-bottom: 1px solid black;
+    font-size: 5rem;
+}
+
+.logo1Half {
+    color: #1EAEB7;
+}
+
+.logo2Half {
+ color: #0A9320;
+}
+
+.content {
+    margin-top: 5%;
+}

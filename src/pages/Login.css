@@ -1,0 +1,44 @@
+.contentCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tutorSection {
+    border-radius: 10px;
+    background-color: #0AA882;
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.clientCol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientSection {
+    border-radius: 10px;
+    background-color: #AEC908;
+    width: 75%;
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.sectionName {
+    font-size: 4rem;
+}
+
+.button {
+    width: 60%;
+    font-size: 1.3em;
+}
