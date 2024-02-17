@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "./App.css";
 import { Container } from "react-bootstrap";
 import Login from "./pages/Login";
+import Register from "./pages/Register";
 
 function App() {
   return (
@@ -15,7 +16,11 @@ function App() {
           </span>
         </div>
         <Container className="content">
-          <Login/>
+          <Routes>
+            <Route index element={<Login/>}/>
+            <Route path="/login" element={<Login/>}/>
+            <Route path="/register" element={<Register/>}/>
+          </Routes>
         </Container>
       </BrowserRouter>
     </div>

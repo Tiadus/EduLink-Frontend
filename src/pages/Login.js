@@ -1,12 +1,19 @@
 import { Row, Col, Form, Button } from "react-bootstrap";
 import "./Login.css";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Login = (props) => {
     const [controller, setController] = useState({
         tutorLogin: false,
         clientLogin: false
     })
+
+    const navigate = useNavigate()
+
+    const handleRegister = () => {
+        navigate("/register")
+    }
 
     const openLogin = (event) => {
         let target = event.target;
@@ -35,7 +42,7 @@ const Login = (props) => {
                     <span className="sectionName"><u>Edu Tutor</u></span>
                 </Col>
                 <Col className="contentCenter" xxl={12} xl={12} lg={12} md={12} sm={12}>
-                    <Button variant="success" className="button registerButton">Register As Tutor</Button>
+                    <Button variant="success" className="button registerButton" onClick={handleRegister}>Register As Tutor</Button>
                 </Col>
                 <Col className="contentCenter" xxl={12} xl={12} lg={12} md={12} sm={12}>
                     <Button variant="primary" name="tutorLogin" onClick={(event) => {openLogin(event)}} className="button loginButton">Login As Tutor</Button>
@@ -72,7 +79,7 @@ const Login = (props) => {
                     <span className="sectionName"><u>Edu Client</u></span>
                 </Col>
                 <Col className="contentCenter" xxl={12} xl={12} lg={12} md={12} sm={12}>
-                    <Button variant="success" className="button registerButton">Register As Client</Button>
+                    <Button variant="success" className="button registerButton" onClick={handleRegister}>Register As Client</Button>
                 </Col>
                 <Col className="contentCenter" xxl={12} xl={12} lg={12} md={12} sm={12}>
                     <Button variant="primary" name="clientLogin" onClick={(event) => {openLogin(event)}} className="button loginButton">Login As Client</Button>

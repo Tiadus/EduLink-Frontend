@@ -1,0 +1,14 @@
+.contentCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.informationForm {
+    font-size: 2em;
+}
+
+.registerPageButton {
+    width: 30%;
+    font-size: 0.7em;
+}
