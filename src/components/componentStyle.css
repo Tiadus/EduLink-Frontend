@@ -1,0 +1,64 @@
+.contentCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.refreshButton {
+    width: 20%;
+}
+
+.accountInformation {
+    font-size: 1.5em;
+}
+
+.listHolder {
+    margin-top: 3%;
+}
+
+.orderCard {
+    border: 1px black solid;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: blanchedalmond;
+}
+
+.bookForm {
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightcoral;
+}
+
+.viewForm {
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightsalmon;
+}
+
+.accountSection {
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightsalmon;
+}
+
+.activeSection {
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightgreen;
+}
+
+.historySection {
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightslategray;
+}
+
+.requestSection {
+    height: 100%;
+    border-radius: 10px;
+    padding: 2%;
+    background-color: lightskyblue;
+}
