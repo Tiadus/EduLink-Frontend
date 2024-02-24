@@ -12,7 +12,7 @@ const Login = (props) => {
     const navigate = useNavigate()
 
     const handleRegister = () => {
-        navigate("/register")
+        props.setLoginRegisterController(false);
     }
 
     const openLogin = (event) => {

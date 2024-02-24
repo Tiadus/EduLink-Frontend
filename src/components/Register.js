@@ -2,7 +2,7 @@ import { Form, Modal, Row, Col, Button, InputGroup } from "react-bootstrap";
 import "./Register.css"
 import { useState } from "react";
 
-const Register = () => {
+const Register = (props) => {
     const [openPayment, setOpenPayment] = useState(false);
     const [showNotice, setShowNotice] = useState(false);
 
@@ -120,6 +120,7 @@ const Register = () => {
 
     return (
         <div>
+            <Button variant="danger" onClick={() => {props.setLoginRegisterController(true)}} style={{float: "right"}}>Back</Button>
             {importantNotice()}
             {informationForm()}
             {openPayment === true && paymentForm()}
