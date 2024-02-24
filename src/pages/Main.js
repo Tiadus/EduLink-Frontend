@@ -11,7 +11,7 @@ import { useSelector } from 'react-redux';
 
 const Main = () => {
     const userCode = useSelector((state) => state.user.userCode); //Used to distinguishe between customers
-    const userType = useSelector((state) => state.user.isAdmin); //Used to distinguishe between customer and admin
+    const userType = useSelector((state) => state.user.userType); //Used to distinguishe between customer and admin
 
     const [mainController, setMainController] = useState({
         account: false,
